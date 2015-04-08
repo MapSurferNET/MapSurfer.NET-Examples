@@ -1,8 +1,8 @@
 ## Requirements ##
 osm_hybrid.msnpx project requires a PostgreSQL/PostGIS database (OSM by default) created by using osm2pgsql converter.
 Therefore, it is required to change a connection string to the tables by providing host, port and user credentials.
-You can do it in follwoing steps:
- 1. Extract the content of osm_hybrid.msnpx file which is actually a zip archive.
+You can do it in following steps:
+ 1. Extract the content of **osm_hybrid.msnpx** file which is actually a zip archive.
  2. In the created folder **osm_hybrid**, open file **Studio\mapstyles.xml** in a text editor.
  3. Replace all strings such as
     <Value>Host=localhost;Database=OSM;User ID=postgres;Password=YOURPASSWORD;Port=5432;CommandTimeout=10000</Value>
