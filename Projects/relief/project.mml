@@ -1,0 +1,135 @@
+{
+  "bounds": [
+    "-180",
+    "-85.05112877980659",
+    "180",
+    "85.05112877980659"
+  ],
+  "center": [
+    "14.9928291140968",
+    "37.7517959387123",
+    "14"
+  ],
+  "format": "png",
+  "minzoom": 0,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "dem",
+      "name": "dem",
+      "srs": "+proj=longlat +datum=WGS84 +no_defs ",
+      "srs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137, 298.257223563, AUTHORITY[\"EPSG\", \"7030\"]], AUTHORITY[\"EPSG\", \"6326\"]], PRIMEM[\"Greenwich\", 0, AUTHORITY[\"EPSG\", \"8901\"]], UNIT[\"degree\", 0.0174532925199433, AUTHORITY[\"EPSG\", \"9102\"]], AUTHORITY[\"EPSG\", \"4326\"]]",
+      "class": "",
+      "Datasource": {
+        "type": "dem",
+        "path": "data\\srtm",
+        "datasource_type": "SRTM_v2",
+        "cache_size": "41943040",
+        "data_type": "Raster",
+        "restore_data": "False",
+        "resampling_algorithm": "Bilinear",
+        "auto_resolution": "True",
+        "downsample_resolution": "True"
+      },
+      "properties": {
+        "padding": "256,256",
+        "cache-features": "true",
+        "cache-features-maxscale": "2500000000"
+      },
+      "extent": [
+        "13.0000",
+        "37.0000",
+        "16.0000",
+        "39.0000"
+      ]
+    },
+    {
+      "id": "srtm-low",
+      "name": "srtm-low",
+      "srs": "+proj=longlat +datum=WGS84 +no_defs ",
+      "srs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137, 298.257223563, AUTHORITY[\"EPSG\", \"7030\"]], AUTHORITY[\"EPSG\", \"6326\"]], PRIMEM[\"Greenwich\", 0, AUTHORITY[\"EPSG\", \"8901\"]], UNIT[\"degree\", 0.0174532925199433, AUTHORITY[\"EPSG\", \"9102\"]], AUTHORITY[\"EPSG\", \"4326\"]]",
+      "class": "",
+      "geometry": "linestring",
+      "Datasource": {
+        "type": "dem",
+        "path": "data\\srtm",
+        "datasource_type": "SRTM_v2",
+        "cache_size": "41943040",
+        "data_type": "Vector",
+        "isoline_interval": "40",
+        "min_elevation": "0",
+        "max_elevation": "8848",
+        "restore_data": "False",
+        "auto_resolution": "False",
+        "downsample_resolution": "False"
+      },
+      "properties": {
+        "padding": "256,256",
+        "cache-features": "true",
+        "cache-features-maxscale": "2500000000"
+      },
+      "extent": [
+        "13.0000",
+        "37.0000",
+        "16.0000",
+        "39.0000"
+      ]
+    },
+    {
+      "id": "srtm-high",
+      "name": "srtm-high",
+      "srs": "+proj=longlat +datum=WGS84 +no_defs ",
+      "srs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137, 298.257223563, AUTHORITY[\"EPSG\", \"7030\"]], AUTHORITY[\"EPSG\", \"6326\"]], PRIMEM[\"Greenwich\", 0, AUTHORITY[\"EPSG\", \"8901\"]], UNIT[\"degree\", 0.0174532925199433, AUTHORITY[\"EPSG\", \"9102\"]], AUTHORITY[\"EPSG\", \"4326\"]]",
+      "class": "",
+      "geometry": "linestring",
+      "Datasource": {
+        "type": "dem",
+        "path": "data\\srtm",
+        "datasource_type": "SRTM_v2",
+        "cache_size": "41943040",
+        "data_type": "Vector",
+        "isoline_interval": "20",
+        "min_elevation": "0",
+        "max_elevation": "8848",
+        "restore_data": "False",
+        "auto_resolution": "False",
+        "downsample_resolution": "False"
+      },
+      "properties": {
+        "padding": "256,256",
+        "cache-features": "true",
+        "cache-features-maxscale": "2500000000"
+      },
+      "extent": [
+        "13.0000",
+        "37.0000",
+        "16.0000",
+        "39.0000"
+      ]
+    }
+  ],
+  "scale": 1.0,
+  "metatile": 0,
+  "description": "",
+  "attribution": "",
+  "extensions": {
+    "translator": "mapnik",
+    "ProjectType": 0,
+    "textabbreviation": false,
+    "bidimode": false,
+    "kerning": false,
+    "labelingoptions": {
+      "accuracy-mode": "HighAccuracy",
+      "threads-number": "1",
+      "point-prioritization": "TopCenter,MiddleRight,BottomCenter,MiddleLeft,TopRight,BottomRight,TopLeft,BottomLeft",
+      "solver": "Greedy",
+      "candidate-position-generator": "Default",
+      "collision-detector": "SpatialIndex",
+      "quality-evaluator-param0-key": "Priority()"
+    }
+  }
+}

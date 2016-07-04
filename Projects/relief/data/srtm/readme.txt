@@ -1,0 +1,1 @@
+copy your SRTM v2 files into this folder
